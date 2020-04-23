@@ -79,7 +79,9 @@
 section {
   padding: 30px;
   border-radius: 4%;
-  background-color: black;
+  /* background: linear-gradient(to right, #232526, #414345); */
+  background: linear-gradient(to right, #16222a, #3a6073);
+  /* background-color: black; */
 }
 .section-title {
   color: azure;
@@ -91,6 +93,17 @@ section {
 
 .blue-shadow {
   box-shadow: -2px 9px 28px 5px rgba(107, 196, 255, 1);
+}
+
+.gradient-first {
+  transition: 3s;
+  background: linear-gradient(to right, #536976, #292e49);
+  opacity: 0.3;
+  /* background: linear-gradient(to right, #bbd2c5, #536976); */
+}
+.gradient-first:hover {
+  background: linear-gradient(to right, #536976, #292e49);
+  opacity: 1;
 }
 
 .section-items input {
