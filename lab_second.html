@@ -20,7 +20,7 @@
   </head>
   <body>
     <section class="hipoten-section blue-shadow">
-      <h3 class="text-center section-title">Гіпотенуза за теоремою піфагора</h3>
+      <h3 class="text-center section-title">Гіпотенуза за теоремою Піфагора</h3>
       <p class="section-description text-center">
         Довжина сторони прямокутного трикутника
       </p>
@@ -65,39 +65,44 @@
       <p class="text-center text-white mt-20" id="result"></p>
     </section>
 
-    <section class="quadratic-section mt-50">
+    <section class="quadratic-section mt-50 blue-shadow">
       <h3 class="text-center section-title">Калькулятор квадратних рівнянь</h3>
       <p class="section-description text-center">
         Скориставшись цим онлайн калькулятором для розв'язання квадратних рівнянь, ви
         зможете дуже просто і швидко знайти корені квадратних рівняння.
       </p>
       <div class="section-items text-center mt-50 mb-50">
-        <input
-          id="a_val"
-          class="d-inline-block form-control"
-          type="text"
-          name="circleRadius"
-          id="a"
-        />
+        <input id="a_val" class="d-inline-block form-control" type="text" name="aVal" />
         <span class="text-white">x<sup>2</sup>+</span>
-        <input
-          id="b_val"
-          class="d-inline-block form-control"
-          type="text"
-          name="circleRadius"
-          id="b"
-        />
+        <input id="b_val" class="d-inline-block form-control" type="text" name="bVal" />
         <span class="text-white">x+</span>
-        <input
-          id="c_val"
-          class="d-inline-block form-control"
-          type="text"
-          name="circleRadius"
-          id="c"
-        />
+        <input id="c_val" class="d-inline-block form-control" type="text" name="cVal" />
         <span class="text-white">=0</span>
       </div>
       <button type="button" class="btn btn-outline-light d-block mx-auto" id="calc_btn">
+        Вирахувати
+      </button>
+      <p class="text-center text-white mt-20" id="result"></p>
+    </section>
+
+    <section class="tabulation-section mt-50 blue-shadow">
+      <h3 class="text-center section-title">Табулювання функції</h3>
+      <p class="section-description text-center mt-20">
+        sin(x)*cos(x)
+      </p>
+      <div class="section-items text-center mt-20 mb-20">
+        <span class="text-white">Початкова точка: </span>
+        <input id="a_val" class="d-inline-block form-control" type="text" name="aVal" />
+        <span class="text-white">Кінцева точка: </span>
+        <input id="b_val" class="d-inline-block form-control" type="text" name="bVal" />
+        <span class="text-white">Крок: </span>
+        <input id="h_val" class="d-inline-block form-control" type="text" name="hVal" />
+      </div>
+      <button
+        type="button"
+        class="btn btn-outline-light d-block mx-auto mt-50"
+        id="calc_btn"
+      >
         Вирахувати
       </button>
       <p class="text-center text-white mt-20" id="result"></p>

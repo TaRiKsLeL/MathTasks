@@ -39,8 +39,8 @@ calcHipotBtn.addEventListener("click", function () {
 
 //SECOND
 
-var calsQuadraticBtn = document.querySelector(".quadratic-section #calc_btn");
-calsQuadraticBtn.addEventListener("click", function () {
+var calсQuadraticBtn = document.querySelector(".quadratic-section #calc_btn");
+calсQuadraticBtn.addEventListener("click", function () {
   let aVal = getValueIfExist(document.querySelector(".quadratic-section #a_val"));
   let bVal = getValueIfExist(document.querySelector(".quadratic-section #b_val"));
   let cVal = getValueIfExist(document.querySelector(".quadratic-section #c_val"));
@@ -72,3 +72,28 @@ function getValueIfExist(selection) {
 }
 
 //THIRD
+
+var calсTabulationBtn = document.querySelector(".tabulation-section #calc_btn");
+
+function addLineToInnerHTML(tag, string) {
+  tag.innerHTML += `<br>${string}`;
+}
+
+function Y(x) {
+  return Math.sin(x) * Math.cos(x);
+}
+
+calсTabulationBtn.addEventListener("click", function () {
+  console.log(" llele");
+  let aVal = getValueIfExist(document.querySelector(".tabulation-section #a_val"));
+  let bVal = getValueIfExist(document.querySelector(".tabulation-section #b_val"));
+  let hVal = getValueIfExist(document.querySelector(".tabulation-section #h_val"));
+  let resultTag = document.querySelector(".tabulation-section #result");
+  resultTag.innerHTML = "";
+
+  let tmpX = parseFloat(aVal);
+  while (tmpX <= bVal) {
+    addLineToInnerHTML(resultTag, `X= ${tmpX} Y=${Y(tmpX).toFixed(2)}`);
+    tmpX += parseFloat(hVal);
+  }
+});
