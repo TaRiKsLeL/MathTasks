@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Калькулятор онлайн</title>
+  </head>
+  <body>
+    <section class="hipoten-section blue-shadow">
+      <h3 class="text-center section-title">Гіпотенуза за теоремою піфагора</h3>
+      <p class="section-description text-center">
+        Довжина сторони прямокутного трикутника
+      </p>
+      <div
+        class="btn-group-vertical hipoten-section-btns mx-auto mt-50"
+        role="group"
+        aria-label="Basic example"
+      >
+        <button
+          type="button"
+          id="two_catets_btn"
+          class="btn btn-secondary"
+          onclick="change_method_click(this.id)"
+        >
+          Два катети
+        </button>
+        <button
+          type="button"
+          id="catet_and_hipotenuse_btn"
+          class="btn btn-secondary"
+          onclick="change_method_click(this.id)"
+        >
+          Катет та гіпотенуза
+        </button>
+      </div>
+
+      <div class="text-center section-items mt-50 mb-50">
+        <span id="first_desc" class="text-white input-desc">a=</span>
+        <input
+          class="d-inline-block form-control mr-50"
+          type="text"
+          name="katetA"
+          id="kat_A"
+        />
+        <span id="second_desc" class="text-white input-desc">b=</span>
+        <input class="d-inline-block form-control" type="text" name="katetA" id="kat_B" />
+        <br />
+      </div>
+      <button type="button" class="btn btn-outline-light d-block mx-auto" id="calc_btn">
+        Вирахувати
+      </button>
+      <p class="text-center text-white mt-20" id="result"></p>
+    </section>
+
+    <section class="quadratic-section mt-50">
+      <h3 class="text-center section-title">Калькулятор квадратних рівнянь</h3>
+      <p class="section-description text-center">
+        Скориставшись цим онлайн калькулятором для розв'язання квадратних рівнянь, ви
+        зможете дуже просто і швидко знайти корені квадратних рівняння.
+      </p>
+      <div class="section-items text-center mt-50 mb-50">
+        <input
+          id="a_val"
+          class="d-inline-block form-control"
+          type="text"
+          name="circleRadius"
+          id="a"
+        />
+        <span class="text-white">x<sup>2</sup>+</span>
+        <input
+          id="b_val"
+          class="d-inline-block form-control"
+          type="text"
+          name="circleRadius"
+          id="b"
+        />
+        <span class="text-white">x+</span>
+        <input
+          id="c_val"
+          class="d-inline-block form-control"
+          type="text"
+          name="circleRadius"
+          id="c"
+        />
+        <span class="text-white">=0</span>
+      </div>
+      <button type="button" class="btn btn-outline-light d-block mx-auto" id="calc_btn">
+        Вирахувати
+      </button>
+      <p class="text-center text-white mt-20" id="result"></p>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app_second.js"></script>
+  </body>
+</html>

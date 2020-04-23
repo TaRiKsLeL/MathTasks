@@ -1,18 +1,106 @@
-section{
-    margin: 20px 0;
-    padding: 40px;
-    border-radius: 4%;
-    background-color: black;
-}
-.section-title{
-    color: azure;
-    margin-bottom: 20px;
+/* =========MARGINS======== */
+
+.mt-100 {
+  margin-top: 100px;
 }
 
-.section-items{
-    text-align: center;
+.mt-50 {
+  margin-top: 50px;
 }
 
-.section-items > *{
-    margin: 20px;
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+/* =========MARGINS======== */
+
+/* =========FONR-WEIGHTS======== */
+
+.w-light {
+  font-weight: 300;
+}
+.w-regular {
+  font-weight: 400;
+}
+.w-medium {
+  font-weight: 500;
+}
+.w-semibold {
+  font-weight: 600;
+}
+.w-bold {
+  font-weight: 700;
+}
+.w-extrabold {
+  font-weight: 800;
+}
+.w-black {
+  font-weight: 900;
+}
+/* =========FONR-WEIGHTS======== */
+
+/* =========SECTION======== */
+section {
+  padding: 30px;
+  border-radius: 4%;
+  background-color: black;
+}
+.section-title {
+  color: azure;
+}
+.section-description {
+  color: gray;
+  font-size: 20px;
+}
+
+.blue-shadow {
+  box-shadow: -2px 9px 28px 5px rgba(107, 196, 255, 1);
+}
+
+.section-items input {
+  width: 50px;
+  border-radius: 25%;
+}
+
+/* =========SECTION======== */
+
+.hipoten-section-btns {
+  width: max-content;
+  display: block;
 }
