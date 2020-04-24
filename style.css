@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 /* =========MARGINS======== */
 
 .mt-100 {
@@ -75,10 +76,14 @@
 }
 /* =========FONR-WEIGHTS======== */
 
+body{
+  font-family: 'Comfortaa', cursive;
+}
+
 /* =========JOINT STYLE========= */
 
 .shadow-section {
-  box-shadow: -2px 9px 28px 5px rgba(107, 196, 255, 1);
+  box-shadow: 0px 3px 28px 5px rgb(58, 196, 214);
 }
 
 .shadow-item {
@@ -89,7 +94,7 @@
   z-index: 1;
   border: none;
   position: relative;
-  background: linear-gradient(to right, #536976, #45526e);
+  background: linear-gradient(to right, #3f6272, #325464);
   transition: all 0.25s ease;
 }
 .btn-first-style::before {
@@ -101,7 +106,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to left, #536976, #45526e);
+  background: linear-gradient(to left, #536976, #3a5b68);
   border-radius: inherit;
   opacity: 0;
   transition: opacity 1.5s;
@@ -116,10 +121,8 @@
 /* =========SECTION======== */
 section {
   padding: 30px;
-  border-radius: 20px;
-  /* background: linear-gradient(to right, #232526, #414345); */
+  border-radius: 15px;
   background: linear-gradient(to right, #16222a, #3a6073);
-  /* background-color: black; */
 }
 .section-title {
   color: azure;
@@ -129,9 +132,13 @@ section {
   font-size: 20px;
 }
 
+.section-items{
+  font-size: 20px;
+}
+
 .section-items input {
   width: 50px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* =========SECTION======== */
